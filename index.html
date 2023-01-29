@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/css/style.css">
+    <title>Сервис комментариев</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Сервис комментариев со спам фильтром</h1>
+        <div class="data">
+        <section class="comment">
+            <h2 class="comment__title">Оставьте ваш комментарий</h2>
+            <p class="comment__checkbox">Хотите показывать ваше имя ? <label for=""> <input type="checkbox" id="checkBoxYes" > Да </label> <label for=""> <input type="checkbox" id="checkBoxNo"> Нет </label></p>
+            <p class="comment__user-name">Введите ваше ФИО:</p>
+            <input type="text" id="user-name-input">
+            <p class="comment__user-img">Введите ссылку вашего аватара:</p>
+            <input type="text" id="user-img-link">
+            <p class="comment__user-name">Оставьте комментарий:</p>
+            <textarea id="comment__user-comments" cols="30" rows="10"></textarea>
+            <button class="comment__btn" onclick="sendComment ()">Отправить</button>
+        </section>
+        <div class="display">
+            <h2 class="chat__title">Чат</h2>
+        <section class="chat">
+            <img src="" alt="" id="chat__img" class="chat__img">
+            <p id="chat__user-name" class="chat__user-name"></p>
+            <p id="chat__date" class="chat__date"></p>
+            <p id="chat__comment" class="chat__comment"></p>
+            
+        </section>
+    </div>
+    </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
